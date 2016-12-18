@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Electronics NOW! | Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Electronics NOW!</a>
+	  <img src="images/logo.png" class="navbar-brand" alt="Logo" width="58" height="120">
+    </div>
+   
+   <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product Selection Access <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			<li><a href="phones.html">Phones</a>
+            <li><a href="tablets.html">Tablets</a></li>
+            <li><a href="tv.html">Tv's</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+	</div>
+</nav>
+<br>	
+
+<div class="container">
+	<div class="pull-right">
+    		<address>
+    			<strong>Electronics NOW!</strong><br>
+				National College of Ireland,<br>
+    			Mayor Square,<br>
+    			IFSC,<br>
+    			Dublin, Ireland.<br>
+    			D01 Y300<br>
+    			<abbr title="Phone">P: (01) 449 8500 </abbr>
+    		</address>
+		<p>Make sure to visit us in store or follow the map for you ease access!</p>
+    	</div>
+	<div class="row-fluid">
+        <div class="span8">
+<iframe src="http://www.map-embed.com/mapsv4.php?w=600&h=500&q=National College of Ireland, Dublin, Ireland, &z=14&t=" width="600" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a class="google" href="http://www.map-embed.com/de/" id="get-map-data">google maps einbinden</a></iframe>
+		</div>
+    	
+      	
+    </div>
+</div>
+<br>
+<div class="container">
+<h1> Submit your order here for pick-up or tell us your issue with our  site!</h1>
+<br>
+    <form id="contact-form" method="post" action="contactfiles/contac.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave detailed item a description to put an order."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+                </div>
+
+            </div>
+
+        </div>
+<footer>
+		<p align="center"><a href="contact.html">back to top</a><br><a href="index.html">Home</a></p>
+        <p align="center">&copy; 2016 Electronics NOW!, Inc. </p>
+</footer>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="contactfiles/validator.js"></script>
+        <script src="contactfiles/contact.js"></script>
+		<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    </body>
+</html>
